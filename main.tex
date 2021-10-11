@@ -8,6 +8,7 @@
 \usepackage{fancyhdr}
 \usepackage{enumitem}
 \usepackage{tabularx}
+\usepackage{siunitx}
 \input{glyphtounicode}
 
 % layout stuff
@@ -32,7 +33,7 @@
                 p{\dimexpr.65\linewidth-2\tabcolsep-1.3333\arrayrulewidth}
             }
             #1 & #2 \\
-            \hline
+            % \hline
         \end{tabularx}
 }
 \newcommand{\formulaListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
@@ -49,14 +50,30 @@
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%% FORMULAS %%%%%%%%%%%%%%%%%%%%%%%%% 
-\section*{Constants}
-
-\section*{Chapter}
+\subsection*{Constants}
 \formulaListStart
-    \formula{$e=mc^2$}{description of formula}
-    \formula{$c^2=a^2+b^2$}{description of formula}
+    \formula{$c = \SI{3.0e8}{m/s}$}{Speed of light.}
+    \formula{$h = \SI{6.626e-34}{J\cdot s}$}{Planck's constant.}
+    \formula{$\hbar = \frac{h}{2\pi} = \SI{1.055e-34}{J \cdot s}$}{Planck's constant.}
+    \formula{$k_B = \SI{1.381e-23}{J/K}$}{Boltzmann constant.}
+    \formula{$e = \SI{1.602e-19}{C}$}{Fundamental charge. Ratio between $J$ and $eV$.}
+    \formula{$m_e = \SI{9.109e-31}{kg}$}{Mass of electron.}
+    \formula{$m_p = \SI{1.673e-27}{kg}$}{Mass of proton.}
 \formulaListEnd
 
-\section*{Chapter}
+\subsection*{Blackbody Radiation}
+\formulaListStart
+    \formula{$\lambda_{max}T = \SI{2.898e-3}{m \cdot K}$}{Wien's Law.}
+    \formula{$I = \sigma T^4$}{Stefan-Boltzmann Law. $ \sigma = \SI{5.67e-8}{W/m^2\cdot K^4}$.}
+    \formula{$\frac{dU(f)}{df} = k_B T\times \frac{8\pi V}{c^3} f^2$}{Spectral energy density (classical theory).}
+    \formula{$\frac{dU(f)}{df} = \frac{hf}{e^{hf / k_BT}-1}\times \frac{8\pi V}{c^3} f^2$}{Spectral energy density (Planck).}
+\formulaListEnd
+
+\subsection*{The Photoelectric Effect}
+\formulaListStart
+\formula{$E = hf$}{Energy of a photon (Einstein).}
+\formula{$KE_{max} = hf - \phi$}{Max KE of an electron ejected by a photon.}
+\formulaListEnd
+
 
 \end{document}
