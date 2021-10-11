@@ -50,7 +50,7 @@
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%% FORMULAS %%%%%%%%%%%%%%%%%%%%%%%%% 
-\subsection*{Constants}
+\subsubsection*{Constants}
 \formulaListStart
     \formula{$c = \SI{3.0e8}{m/s}$}{Speed of light.}
     \formula{$h = \SI{6.626e-34}{J\cdot s}$}{Planck's constant.}
@@ -61,7 +61,7 @@
     \formula{$m_p = \SI{1.673e-27}{kg}$}{Mass of proton.}
 \formulaListEnd
 
-\subsection*{Blackbody Radiation}
+\subsubsection*{Blackbody Radiation}
 \formulaListStart
     \formula{$\lambda_{max}T = \SI{2.898e-3}{m \cdot K}$}{Wien's Law.}
     \formula{$I = \sigma T^4$}{Stefan-Boltzmann Law. $ \sigma = \SI{5.67e-8}{W/m^2\cdot K^4}$.}
@@ -69,11 +69,39 @@
     \formula{$\frac{dU(f)}{df} = \frac{hf}{e^{hf / k_BT}-1}\times \frac{8\pi V}{c^3} f^2$}{Spectral energy density (Planck).}
 \formulaListEnd
 
-\subsection*{The Photoelectric Effect}
+\subsubsection*{The Photoelectric Effect}
 \formulaListStart
-\formula{$E = hf$}{Energy of a photon (Einstein).}
+\formula{$E = hf = \frac{hc}{\lambda}$}{Energy of a photon (Einstein).}
 \formula{$KE_{max} = hf - \phi$}{Max KE of an electron ejected by a photon.}
 \formulaListEnd
 
+\subsubsection*{The Compton Effect}
+\formulaListStart
+\formula{$E = pc$}{Energy of an object with zero mass: energy of a photon}
+\formula{$p = \frac{h}{\lambda}$}{Momentum of a photon.}
+\formula{$\lambda ' - \lambda = \frac{h}{m_ec}(1-cos(\theta))$}{Compton shift equation. $\lambda ' \geq \lambda, E' \leq E.$}
+\formulaListEnd
+
+\subsubsection*{Particle vs. Wave Behavior}
+\formulaListStart
+\formula{$\lambda << D$}{Characteristic of particle behavior. $D$ is relevant dimension of the experiment.}
+\formula{$\lambda \geq D$}{Characteristic of wave behavior.}
+\formulaListEnd
+\newpage
+
+\subsubsection*{Matter Waves}
+\formulaListStart
+\formula{$2d\cdot sin(\theta) = m\lambda$}{Bragg Law. $m\in \mathbf{Z}^+$}
+\formula{$\lambda=\frac{h}{p}$}{de Broglie wavelength.}
+\formula{$f=\frac{E}{h}$}{Frequency of a matter wave.}
+\formula{$v_{wave} = f\lambda = \frac{E}{p}$}{Velocity of a matter wave.}
+\formula{$k\equiv\frac{2\pi}{\lambda}$}{Wave number definition.}
+\formula{$\omega\equiv\frac{2\pi}{T}$}{Angular frequency definition.}
+\formula{$p=\frac{h}{\lambda}=\hbar k$}{Fundamental wave-particle relationship.}
+\formula{$E=hf=\hbar\omega$}{Fundamental wave-particle relationship.}
+\formula{$-\frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2}\Psi(x,t) = i \hbar \frac{\partial}{\partial t}\Psi(x,t)$}{Schrodinger Equation for free particles, without external forces.}
+
+
+\formulaListEnd
 
 \end{document}
