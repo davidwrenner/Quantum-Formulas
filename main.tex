@@ -1,0 +1,62 @@
+\documentclass[letterpaper, 12pt]{article}
+
+% packages
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% layout stuff
+\date{\today}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\pdfgentounicode=1
+
+% macro definitions
+\newcommand{\formula}[2]{
+    \item
+        \begin{tabularx}{.96\textwidth} { 
+                p{\dimexpr.35\linewidth-2\tabcolsep-1.3333\arrayrulewidth}
+                p{\dimexpr.65\linewidth-2\tabcolsep-1.3333\arrayrulewidth}
+            }
+            #1 & #2 \\
+            \hline
+        \end{tabularx}
+}
+\newcommand{\formulaListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\formulaListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%% HEADER %%%%%%%%%%%%%%%%%%%%%%%%% 
+\begin{center}
+    {\LARGE \textbf{Quantum Physics Formulas}} \\
+    \vspace{5pt}
+    \small \href{mailto:davidwrenner@wustl.edu}{David Wrenner} 
+    $|$ 
+    \today
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%% FORMULAS %%%%%%%%%%%%%%%%%%%%%%%%% 
+\section*{Constants}
+
+\section*{Chapter}
+\formulaListStart
+    \formula{$e=mc^2$}{description of formula}
+    \formula{$c^2=a^2+b^2$}{description of formula}
+\formulaListEnd
+
+\section*{Chapter}
+
+\end{document}
