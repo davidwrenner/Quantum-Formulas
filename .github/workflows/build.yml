@@ -1,6 +1,8 @@
 name: Build Formula Sheet
 on:
   push:
+    branches:
+      - master
     tags:
       - '*.*.*'
 jobs:
