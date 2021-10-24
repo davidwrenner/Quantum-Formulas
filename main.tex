@@ -101,8 +101,43 @@
 \formula{$E=hf=\hbar\omega$}{Fundamental wave-particle relationship.}
 \formula{$-\frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2}\Psi(x,t) = i \hbar \frac{\partial}{\partial t}\Psi(x,t)$}{Schrodinger Equation for free particles, without external forces.}
 \formula{$\lambda = \frac{h}{\sqrt{3m k_B T}}$}{Wavelength of a thermal particle.}
+\formulaListEnd
 
+\subsection*{The Plane Wave}
+\formulaListStart
+\formula{$\Psi(x,t) = Ae^{i(kx-\omega t)}$}{SE solution.}
+\formula{$\frac{\hbar^2k^2}{2m}=\hbar\omega$}{Result from evaluating SE with solution.}
+\formula{$\frac{p^2}{2m}=E=\frac{1}{2}mv^2$}{By wave-particle relationships.}
+\formulaListEnd
 
+\subsection*{The Uncertainty Principle}
+\formulaListStart
+\formula{$\Delta Q = \sqrt{\frac{\sum_i (Q_i - \bar{Q})^2 n_i}{\sum_i n_i}}$}{Definition of uncertainty (standard deviation).}
+\formula{$\Delta p_x \propto \frac{1}{\Delta x}$}{Single slit experiment: width of diffraction pattern inversely proportional to slit width.}
+\formula{$\Delta p_x \Delta x \geq \frac{\hbar}{2}$}{Heisenberg uncertainty principle.}
+\formula{$\Delta p_x \Delta x = \frac{\hbar}{2}$}{Special case: Gaussian. $\Psi(x,0) = Ce^{-(\frac{x}{2\epsilon})^2}$. $\Delta x \propto \epsilon$, $\Delta p_x \propto \frac{1}{\epsilon}$ }
+\formula{$\Delta E \Delta t \geq \frac{\hbar}{2}$}{Relation of particle energy and time of decay.}
+\formulaListEnd
+
+\newpage
+\subsection*{The Bohr Model of the H atom}
+\formulaListStart
+\formula{$E_{classical} = -\frac{e^2}{8\pi\epsilon_0r}$}{Energy of orbiting electron (classical theory).}
+\formula{$\L=n\hbar$}{Bohr postulate: angular momentum takes on only discrete values. $n\in \mathbf{Z^+}$}.
+\formula{$v=\frac{n\hbar}{mr}$}{}
+\formula{$r=a_0n^2=\frac{(4\pi\epsilon_0)\hbar^2}{me^2}n^2$}{Bohr radii for H atom. $a_0=\SI{.0529}{nm}$}.
+\formula{$E = \frac{-me^4}{32\pi^2\epsilon_0^2\hbar^2}\frac{1}{n^2}
+= \SI{-13.6}{eV}\frac{1}{n^2}$}{Bohr energy for H atom.}
+\formulaListEnd
+
+\subsection*{Math Basis for Uncertainty}
+\formulaListStart
+\formula{$\Psi(x) = \frac{1}{2\pi}
+\int_{-\infty}^{\infty} A(k)e^{ikx} \,dx
+$}{$\Psi(x)$ as a sum of plane waves of amplitude $A(k)$.}
+\formula{$A(k) = \frac{1}{2\pi}
+\int_{-\infty}^{\infty} \Psi(x)e^{-ikx} \,dx
+$}{Fourier transform of $\Psi(x)$.}
 \formulaListEnd
 
 \end{document}
