@@ -103,14 +103,14 @@
 \formula{$\lambda = \frac{h}{\sqrt{3m k_B T}}$}{Wavelength of a thermal particle.}
 \formulaListEnd
 
-\subsection*{The Plane Wave}
+\subsubsection*{The Plane Wave}
 \formulaListStart
 \formula{$\Psi(x,t) = Ae^{i(kx-\omega t)}$}{SE solution.}
 \formula{$\frac{\hbar^2k^2}{2m}=\hbar\omega$}{Result from evaluating SE with solution.}
 \formula{$\frac{p^2}{2m}=E=\frac{1}{2}mv^2$}{By wave-particle relationships.}
 \formulaListEnd
 
-\subsection*{The Uncertainty Principle}
+\subsubsection*{The Uncertainty Principle}
 \formulaListStart
 \formula{$\Delta Q = \sqrt{\frac{\sum_i (Q_i - \bar{Q})^2 n_i}{\sum_i n_i}}$}{Definition of uncertainty (standard deviation).}
 \formula{$\Delta p_x \propto \frac{1}{\Delta x}$}{Single slit experiment: width of diffraction pattern inversely proportional to slit width.}
@@ -120,7 +120,7 @@
 \formulaListEnd
 
 \newpage
-\subsection*{The Bohr Model of the H atom}
+\subsubsection*{The Bohr Model of the H atom}
 \formulaListStart
 \formula{$E_{classical} = -\frac{e^2}{8\pi\epsilon_0r}$}{Energy of orbiting electron (classical theory).}
 \formula{$\L=n\hbar$}{Bohr postulate: angular momentum takes on only discrete values. $n\in \mathbf{Z^+}$}.
@@ -130,7 +130,7 @@
 = \SI{-13.6}{eV}\frac{1}{n^2}$}{Bohr energy for H atom.}
 \formulaListEnd
 
-\subsection*{Math Basis for Uncertainty}
+\subsubsection*{Math Basis for Uncertainty}
 \formulaListStart
 \formula{$\Psi(x) = \frac{1}{2\pi}
 \int_{-\infty}^{\infty} A(k)e^{ikx} \,dx
@@ -138,6 +138,12 @@ $}{$\Psi(x)$ as a sum of plane waves of amplitude $A(k)$.}
 \formula{$A(k) = \frac{1}{2\pi}
 \int_{-\infty}^{\infty} \Psi(x)e^{-ikx} \,dx
 $}{Fourier transform of $\Psi(x)$.}
+\formula{$\int_{-\infty}^{+\infty} e^{-az^2+bz}\,dz = \sqrt{\frac{\pi}{a}}e^{\frac{b^2}{4a}}$}{Gaussian Integral.}
 \formulaListEnd
 
+\subsubsection*{Stationary States}
+\formulaListStart
+\formula{$-\frac{\hbar^2}{2m} \frac{\partial^2}{\partial x^2}\psi(x) + U(x)\psi(x)= E\psi(x)$}{Time-independent Schrodinger Equation.}
+\formula{$\Psi(x,t) = \psi(x)e^{-iEt/\hbar}$}{Total wave function relation to the temporal part.}
+\formulaListEnd
 \end{document}
